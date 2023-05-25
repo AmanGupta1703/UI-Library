@@ -24,6 +24,10 @@ module.exports = {
 					},
 				},
 			},
+			{
+				test: /\.css$/,
+				use: ["style-loader", "css-loader"],
+			},
 		],
 	},
 }; // how we want the webpack to work, will run on the computer and not on the browser
